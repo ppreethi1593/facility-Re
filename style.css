@@ -14,7 +14,6 @@ html{
 body{
     font-family:  "Merienda", cursive;
     font-family: "Nunito", sans-serif;
-    font-size: 1.6rem;
     -webkit-font-smoothing: antialiased;
     font-optical-sizing:auto;
     color: #212529;
@@ -38,15 +37,15 @@ h2{
 h6{
     font-family: var(--ffsecondary);
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 400;
     padding: 1rem 0rem;
+    word-spacing: 0.5rem;
 }
 p{
-     font-family: var(--ffsecondary);
-     color: #212529;
-    font-size: 1.6rem;
-    font-weight: 400;
-    /* text-align: justify; */
+    font-family: var(--ffsecondary);
+    font-size: 1.5rem;
+    /* font-weight: 200; */
+    text-align: justify;
     line-height: 2rem;
     word-spacing: 0.5rem;
 }
@@ -80,5 +79,10 @@ height: 3.5rem;
         display: grid;
         grid-template-columns: 1fr;
         padding: 0rem 1rem;
+    }
+    p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
