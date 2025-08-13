@@ -1,86 +1,105 @@
-@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+
+
+* {
     margin: 0;
     padding: 0;
     text-wrap: pretty;
     box-sizing: border-box;
 }
-html{
+
+html {
     font-size: 62.5%;
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
-body{
-    font-family:  "Merienda", cursive;
+
+body {
+    font-family: "Merienda", cursive;
     font-family: "Nunito", sans-serif;
     -webkit-font-smoothing: antialiased;
-    font-optical-sizing:auto;
+    font-optical-sizing: auto;
     color: #212529;
 }
-:root{
-    --primarycolor:#212529;
-    --secondaryColor:#be9379;
-    --ffprimary:"Merienda", cursive;
-    --ffsecondary: "Nunito", sans-serif;
+
+:root {
+    --primarycolor: #212529;
+    --secondaryColor: #be9379;
+    --ffprimary: "Merienda", cursive;
+    --ffsecondary: "Nunito Sans", sans-serif;
 }
-.facilityContainer{
+
+.facilityContainer {
     margin: auto;
     max-width: 1200px;
 }
-h2{
-    font-family:  var(--ffprimary);
+
+h2 {
+    /* font-family: "Merienda", cursive; */
+    font-family: var(--ffprimary);
     font-size: 4rem;
     font-weight: 800;
     margin-bottom: 2rem;
 }
-h6{
+
+h3 {
+    /* font-family: "Nunito Sans", sans-serif; */
     font-family: var(--ffsecondary);
     font-size: 2rem;
     font-weight: 400;
     padding: 1rem 0rem;
     word-spacing: 0.5rem;
 }
-p{
+
+p {
     font-family: var(--ffsecondary);
     font-size: 1.5rem;
     /* font-weight: 200; */
-    text-align: justify;
+    /* text-align: justify; */
     line-height: 2rem;
     /* word-spacing: 0.5rem; */
 }
-.facilityImgBlock{
+
+.facilityImgBlock {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2rem;
     padding: 0rem 2rem;
 }
-.facilityBox{
+
+.facilityBox {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.facilityImgBlock{
+
+.facilityImgBlock {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
-.facilityBox img{
-width:auto;
-height: 3.5rem;
+
+.facilityBox img {
+    width: auto;
+    height: 3.5rem;
 }
-.facility{
+
+.facility {
     padding: 3rem 0rem;
 }
+
 @media (max-width:576px) {
-    .facilityImgBlock{
+    .facilityImgBlock {
         display: grid;
         grid-template-columns: 1fr;
         padding: 0rem 1rem;
     }
-    p{
+
+    p {
         display: flex;
         align-items: center;
         justify-content: center;
